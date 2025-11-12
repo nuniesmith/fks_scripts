@@ -2,7 +2,8 @@
 # Commit and push all repos (including new extracted repos)
 # This script is part of the FKS scripts repository
 
-set -e
+# Don't exit on error - we want to process all repos even if some fail
+set +e
 
 BASE_DIR="/home/jordan/Nextcloud/code/repos/fks/repo"
 
