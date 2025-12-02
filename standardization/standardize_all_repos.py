@@ -219,7 +219,7 @@ SERVICE_PORT={port}
         """Create standard Dockerfile."""
         if self.repo_type == "rust":
             dockerfile_content = """# Multi-stage build for Rust service
-FROM rust:1.75-slim as builder
+FROM rust:1.75-slim AS builder
 
 WORKDIR /app
 
