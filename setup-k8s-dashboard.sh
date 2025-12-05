@@ -17,7 +17,8 @@ DASHBOARD_NAMESPACE="kubernetes-dashboard"
 DASHBOARD_VERSION="v2.7.0"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-TOKEN_FILE="$REPO_DIR/main/k8s/dashboard-token.txt"
+# Token file should be in infrastructure/main/k8s/ (not services/main/k8s/)
+TOKEN_FILE="$REPO_DIR/infrastructure/main/k8s/dashboard-token.txt"
 
 # Functions
 log_info() {

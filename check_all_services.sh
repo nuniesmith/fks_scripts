@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 # Script directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-SERVICE_REGISTRY="$REPO_ROOT/services/config/service_registry.json"
+SERVICE_REGISTRY="$REPO_ROOT/infrastructure/config/service_registry.json"
 
 # Check if service registry exists
 if [ ! -f "$SERVICE_REGISTRY" ]; then

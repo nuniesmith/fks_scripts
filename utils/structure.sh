@@ -485,9 +485,6 @@ services:
     environment:
       - FKS_MODE=server
       - FKS_DEBUG=false
-    volumes:
-      - ./data:/app/data
-      - ./logs:/app/logs
     ports:
       - "8000:8000"
     restart: unless-stopped
